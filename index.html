@@ -1,10 +1,138 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<a href="https://www.youtube.com/?gl=TW&hl=zh-tw">PCNET</a>
-<a href="http://www.pcnet.idv.tw/">
-<img src="images/8831.gif"></a>
+<head>
+	<style>
+		html {
+			background-image: url('back.png');	
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		#bug {
+			position: relative;
+			-webkit-animation-name: b; /* Safari 4.0 - 8.0 */
+    		-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */	
+			animation-name: b;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;						
+		}
+		table {
+			width: 100%;
+			//position: relative;
+			border-style: dotted;
+			border-color: white;
+			border-radius: 5px;	
+			-webkit-animation-name: c; /* Safari 4.0 - 8.0 */
+    		-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+			animation-name: c;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;		
+		}
+		th, td{				
+			color: white;
+			//position: relative;
+			font-size: 20px;
+			text-align: left;
+			border-style: dashed;
+			border-color: white;
+			padding: 10px;
+			-webkit-animation-name: c; /* Safari 4.0 - 8.0 */
+    		-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+			animation-name: c;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+		}	
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes b {
+		    0%	{left: 0px; top: 0px; }
+		    20%	{left: 300px; top: 0px; }
+		    40%	{left: 80px; top: 200px; }
+		    60%	{left: 150px; top: -80px; }
+		    80%{left: 220px; top: 200px; }
+		    100%{left: 0px; top: 0px; }
+		}
+
+		/* Standard syntax */
+		@keyframes b {
+		    0%	{left: 0px; top: 0px; }
+		    20%	{left: 300px; top: 0px; }
+		    40%	{left: 80px; top: 200px; }
+		    60%	{left: 150px; top: -80px; }
+		    80%{left: 220px; top: 200px; }
+		    100%{left: 0px; top: 0px; }
+		}
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes c {
+		    0%	{border-color:red;}
+		    25%	{border-color:orange;}
+		    50%	{border-color:yellow;}
+		    75%	{border-color:green;}
+		    100%{border-color:lightblue;}
+		}
+
+		/* Standard syntax */
+		@keyframes c {
+		    0%	{border-color:red; }
+		    25%	{border-color:orange; }
+		    50%	{border-color:yellow; }
+		    75%	{border-color:green; }
+		    100%{border-color:lightblue; }
+		}	
+	</style>
+</head>
+<body>	
+	<div>
+	<table>		
+		<tr>
+			<th rowspan="4">
+				<img src="photo.jpg" alt="My photo" style="width: 300px; height: 300px;">
+			</th>
+			<th>姓名  :</th>
+			<td>
+				<a href="https://www.facebook.com/profile.php?id=100000431414308"  target="_blank" style="color: red;">唐鼎鈞</a>
+			</td>
+			<th rowspan="4">就讀學校  :</th>
+			<td>
+				<a href="http://web.ncku.edu.tw/bin/home.php" target="_blank" style="color: yellow;" title="前往成功大學網站">(2014~now) 成功大學</a>			
+			</td>
+		</tr>
+		<tr>
+			<th>生日  :</th>
+			<td>0903</td>
+			<td>
+				<a href="http://web.jjjh.ptc.edu.tw/" target="_blank" style="color: lightgreen;" title="前往中山工商網站">(2011~2014) 中山工商</a>
+			</td>
+		</tr>
+		<tr>
+			<th>星座  :</th>
+			<td>
+				<img src="virgo.png" alt="virgo" style="float: left; width: 20px; height: 20px;">
+				<a href="https://zh.wikipedia.org/wiki/%E5%AE%A4%E5%A5%B3%E5%BA%A7" target="_blank" style="color: orange;">處女座</a>
+			</td>
+			<td>
+				<a href="http://web.jjjh.ptc.edu.tw/" target="_blank" style="color: lightblue;" title="前往至正國中網站">(2008~2011) 至正國中</a>	
+			</td>
+		</tr>
+		<tr>
+			<th>血型  :</th>
+			<td>A</td>
+			<td>
+				<a href="http://web.raps.ptc.edu.tw/" target="_blank" style="color: purple;" title="前往仁愛國小網站">(2002~2008) 仁愛國小</a>
+			</td>
+		</tr>
+	</table>
+	<div>
+		<iframe name="_fav" src="https://weather.com/zh-TW/weather/today/l/TWXX2037:1:TW" width="60%" height="500px" align="right"></iframe>
+		<h2 style="color: lightblue;">常用網站</h2>
+		<ul>
+			<li style="color: lightblue"><a href="https://weather.com/zh-TW/weather/today/l/TWXX2037:1:TW" style="color: lightblue" target="_fav">天氣預報</a></li>
+			<li style="color: lightblue"><a href="https://www.ptt.cc/bbs/index.html" style="color: lightblue" target="_fav">PTT</a></li>
+			<li style="color: lightblue"><a href="http://www.coolpc.com.tw/phpBB2/portal.php" style="color: lightblue" target="_fav">原價屋</a></li>
+			<li style="color: lightblue"><a href="https://volleyball.mymy.tw/?" style="color: lightblue" target="_fav">排球魂</a></li>
+			<li style="color: lightblue"><a href="http://wiki.csie.ncku.edu.tw/" style="color: lightblue" target="_fav">成大資工Wiki</a></li>
+		</ul>
+		<img id="bug" src="bug.png">		
+	</div>	
 </body>
 </html>
